@@ -13,4 +13,15 @@ class UserVC:UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.navigationItem.title = "User";
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.tabBarController?.navigationItem.title = "User";
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        self.tabBarController?.navigationItem.title = "";
+    }
 }

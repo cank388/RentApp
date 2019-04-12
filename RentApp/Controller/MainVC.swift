@@ -20,11 +20,17 @@ class MainVC:UIViewController{
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        self.tabBarController?.navigationItem.title = "";
         showImage(false)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.navigationItem.title = "Discover"
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        self.tabBarController?.navigationItem.title = "Discover"
         showImage(true)
     }
 
@@ -57,9 +63,11 @@ class MainVC:UIViewController{
     
     
     func initNavigationBar(){
-        self.navigationItem.title = "Discover"
-        self.tabBarController?.navigationItem.title = "Discover"
         self.navigationController?.navigationBar.prefersLargeTitles = true;
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = .clear
 //        let search_button = UIBarButtonItem(image: UIImage(named: "loupe"),
 //                                            style: UIBarButtonItem.Style.plain ,
 //                                            target: self, action:#selector (onSearchClicked))

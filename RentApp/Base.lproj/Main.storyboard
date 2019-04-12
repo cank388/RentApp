@@ -10,30 +10,30 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LocationVC-->
         <scene sceneID="d28-nw-5Re">
             <objects>
-                <viewController id="k26-ka-p15" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LocationVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="k26-ka-p15" customClass="LocationVC" customModule="RentApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Bl-DD-CnL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.60392156860000001" green="0.1058823529" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Mpz-nn-OO8"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="location" id="xhl-18-FVo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jcM-k5-EXn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1143" y="1136"/>
+            <point key="canvasLocation" x="-1143.2" y="1135.6821589205399"/>
         </scene>
-        <!--View Controller-->
+        <!--FavouritesVC-->
         <scene sceneID="ceJ-fS-94O">
             <objects>
-                <viewController id="a0b-v2-jgJ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FavouritesVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="a0b-v2-jgJ" customClass="FavouritesVC" customModule="RentApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ds6-qU-7M2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1Js-u0-VGQ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="heart" id="U0S-U7-pqk"/>
@@ -50,8 +50,17 @@
                     <view key="view" contentMode="scaleToFill" id="w0j-2s-4Fv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="djf-kV-cOb">
+                                <rect key="frame" x="81" y="222" width="212" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Wli-Xf-uNy"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="ico home" id="fMN-y3-rsl"/>
@@ -60,14 +69,14 @@
             </objects>
             <point key="canvasLocation" x="1157.5999999999999" y="131.78410794602701"/>
         </scene>
-        <!--View Controller-->
+        <!--UserVC-->
         <scene sceneID="7Ds-b7-pO1">
             <objects>
-                <viewController id="q7a-XA-gzn" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="q7a-XA-gzn" customClass="UserVC" customModule="RentApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4b8-tD-8rh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="mau-Un-2VU"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="ico home" id="5LR-1f-R24"/>
