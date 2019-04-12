@@ -18,6 +18,33 @@ class MainVC:UIViewController{
         
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        showImage(false)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        showImage(true)
+    }
+
+
+    private func showImage(_ show: Bool) {
+        UIView.animate(withDuration: 0.1) {
+            self.imageView.alpha = show ? 1.0 : 0.0
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -31,6 +58,7 @@ class MainVC:UIViewController{
     
     func initNavigationBar(){
         self.navigationItem.title = "Discover"
+        self.tabBarController?.navigationItem.title = "Discover"
         self.navigationController?.navigationBar.prefersLargeTitles = true;
 //        let search_button = UIBarButtonItem(image: UIImage(named: "loupe"),
 //                                            style: UIBarButtonItem.Style.plain ,
