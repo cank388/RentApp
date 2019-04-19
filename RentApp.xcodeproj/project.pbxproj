@@ -18,6 +18,10 @@
 		8B84CFE62260D53600189E82 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B84CFE52260D53600189E82 /* LocationVC.swift */; };
 		8B84CFE82260D55A00189E82 /* FavouritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B84CFE72260D55A00189E82 /* FavouritesVC.swift */; };
 		8B84CFEA2260D56600189E82 /* UserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B84CFE92260D56600189E82 /* UserVC.swift */; };
+		8BF938172267115100A63054 /* TopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF938162267115100A63054 /* TopCollectionViewCell.swift */; };
+		8BF9381922671BD600A63054 /* TopCollectionViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF9381822671BD600A63054 /* TopCollectionViewModal.swift */; };
+		8BF9381B2267671100A63054 /* MiddleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF9381A2267671100A63054 /* MiddleCollectionViewCell.swift */; };
+		8BF9381D2267732F00A63054 /* BottomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF9381C2267732F00A63054 /* BottomCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		8B84CFE52260D53600189E82 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		8B84CFE72260D55A00189E82 /* FavouritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesVC.swift; sourceTree = "<group>"; };
 		8B84CFE92260D56600189E82 /* UserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVC.swift; sourceTree = "<group>"; };
+		8BF938162267115100A63054 /* TopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCollectionViewCell.swift; sourceTree = "<group>"; };
+		8BF9381822671BD600A63054 /* TopCollectionViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCollectionViewModal.swift; sourceTree = "<group>"; };
+		8BF9381A2267671100A63054 /* MiddleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleCollectionViewCell.swift; sourceTree = "<group>"; };
+		8BF9381C2267732F00A63054 /* BottomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B361E292269BE0900D3C182 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8BF938162267115100A63054 /* TopCollectionViewCell.swift */,
+				8BF9381A2267671100A63054 /* MiddleCollectionViewCell.swift */,
+				8BF9381C2267732F00A63054 /* BottomCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		8B84CFBE2260BB6F00189E82 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +84,7 @@
 		8B84CFC92260BB6F00189E82 /* RentApp */ = {
 			isa = PBXGroup;
 			children = (
+				8B361E292269BE0900D3C182 /* Cells */,
 				8B84CFE02260BD4100189E82 /* Controller */,
 				8B84CFDC2260BBF300189E82 /* Modal */,
 				8B84CFCA2260BB6F00189E82 /* AppDelegate.swift */,
@@ -83,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				8B84CFDD2260BCEF00189E82 /* User.swift */,
+				8BF9381822671BD600A63054 /* TopCollectionViewModal.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -169,12 +189,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BF938172267115100A63054 /* TopCollectionViewCell.swift in Sources */,
 				8B84CFE42260C8E900189E82 /* Extensions.swift in Sources */,
+				8BF9381B2267671100A63054 /* MiddleCollectionViewCell.swift in Sources */,
+				8BF9381922671BD600A63054 /* TopCollectionViewModal.swift in Sources */,
 				8B84CFCD2260BB6F00189E82 /* ViewController.swift in Sources */,
 				8B84CFE22260BD5800189E82 /* MainVC.swift in Sources */,
 				8B84CFCB2260BB6F00189E82 /* AppDelegate.swift in Sources */,
 				8B84CFDE2260BCEF00189E82 /* User.swift in Sources */,
 				8B84CFE82260D55A00189E82 /* FavouritesVC.swift in Sources */,
+				8BF9381D2267732F00A63054 /* BottomCollectionViewCell.swift in Sources */,
 				8B84CFE62260D53600189E82 /* LocationVC.swift in Sources */,
 				8B84CFEA2260D56600189E82 /* UserVC.swift in Sources */,
 			);

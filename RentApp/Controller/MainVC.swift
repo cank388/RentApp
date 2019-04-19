@@ -9,12 +9,52 @@
 import Foundation
 import UIKit
 
-class MainVC:UIViewController{
+class MainVC:UIViewController,UICollectionViewDelegate,UICollectionViewDataSource{
+    @IBOutlet weak var topCollectionView: UICollectionView!
+    @IBOutlet weak var middleCollectionView: UICollectionView!
+    @IBOutlet weak var bottomCollectionView: UICollectionView!
+    
+    var emptyCell = UICollectionViewCell();
+    //topCollectionView Arrays
+    let array0 = ["Hot This Month","Great Rating","Great Rating"]
+    let array1 = ["$1200","$1200","$1200"]
+    let array2 = ["Fresh Apartment","Old Town Flat","Old Town Flat"]
+    let array3 = ["4 stars","4 stars","4 stars"]
+    let array4 = ["Bratislava","Prague","Prague"]
+    let array5 = ["3","4","5"]
+    let apartmentImages:[UIImage] = [UIImage(named: "image")!,UIImage(named: "image")!,UIImage(named: "image")!]
+    
+    //middleCollectionView Arrays
+    let userArrayImages:[UIImage] = [UIImage(named: "photo")!,UIImage(named: "photo2")!,UIImage(named: "photo3")!]
+    let userNameArray = ["Jerry Wise", "Leo Miles", "Allie Seek"]
+    let userStarArray = ["5 stars","5 stars","5 stars"]
+    let userOffersArray = ["129 Offers", "76 Offers", "51 Offers"]
+    
+    //bottomCollectionView Arrays
+    let newsImagesArray:[UIImage] = [UIImage(named: "image")!,UIImage(named: "image")!,UIImage(named: "image")!]
+    let newsPriceArray = ["$420","$500","$600"]
+    
+    
+    //navbar Image View
     var imageView:UIImageView!;
     
     override func viewDidLoad() {
         super.viewDidLoad();
         initNavigationBar()
+        topCollectionView.dataSource = self
+        topCollectionView.delegate = self
+        topCollectionView.showsHorizontalScrollIndicator = false
+        topCollectionView.showsVerticalScrollIndicator = false
+        
+        middleCollectionView.dataSource = self
+        middleCollectionView.delegate = self
+        middleCollectionView.showsVerticalScrollIndicator = false
+        middleCollectionView.showsHorizontalScrollIndicator = false
+        
+        bottomCollectionView.dataSource = self
+        bottomCollectionView.delegate = self
+        bottomCollectionView.showsVerticalScrollIndicator = false
+        bottomCollectionView.showsHorizontalScrollIndicator = false
         
     }
     
@@ -43,8 +83,54 @@ class MainVC:UIViewController{
     
     
     
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
+    }
     
-    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        if collectionView == self.topCollectionView{
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! TopCollectionViewCell;
+            cell.noticeLabel.text = array0[indexPath.row]
+            cell.priceLabel.text = array1[indexPath.row]
+            cell.accomodationTypeLabel.text = array2[indexPath.row]
+            cell.starLabel.text = array3[indexPath.row]
+            cell.locationLabel.text = array4[indexPath.row]
+            cell.stayedPeopleLabel.text = array5[indexPath.row]
+            cell.houseImageView.image = apartmentImages[indexPath.item]
+            return cell;
+        }else if collectionView == self.middleCollectionView{
+            
+            
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "userCell", for: indexPath) as! MiddleCollectionViewCell;
+            
+            cell.userImageView.image = userArrayImages[indexPath.item]
+            cell.userNameLabel.text = userNameArray[indexPath.row]
+            cell.userOfferLabel.text = userOffersArray[indexPath.row]
+            cell.userStarLabel.text = userStarArray[indexPath.row]
+
+            cell.layer.masksToBounds = true
+            cell.layer.cornerRadius = 15
+                //CGFloat(roundf(Float(cell.frame.size.width/2.0)))
+       
+
+            return cell;
+        }else if collectionView == self.bottomCollectionView {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "newsCell", for: indexPath) as! BottomCollectionViewCell;
+            cell.newsImageView.image = newsImagesArray[indexPath.item]
+            cell.newsPriceLabel.text = newsPriceArray[indexPath.row]
+            cell.layer.masksToBounds = true
+            cell.layer.cornerRadius = 10
+            return cell;
+        }else{
+            return emptyCell;
+        }
+        
+        
+        
+        
+        
+    }
     
     
     
@@ -63,16 +149,17 @@ class MainVC:UIViewController{
     
     
     func initNavigationBar(){
+        self.tabBarController?.tabBar.shadowImage = UIImage()
+        self.tabBarController?.tabBar.backgroundImage = UIImage()
+        self.tabBarController?.tabBar.barTintColor = UIColor.clear;
+        self.tabBarController?.tabBar.isTranslucent = true;
+        //self.tabBarController?.tabBar.backgroundColor = .clear
+        
         self.navigationController?.navigationBar.prefersLargeTitles = true;
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.view.backgroundColor = .clear
-//        let search_button = UIBarButtonItem(image: UIImage(named: "loupe"),
-//                                            style: UIBarButtonItem.Style.plain ,
-//                                            target: self, action:#selector (onSearchClicked))
-//        search_button.tintColor = .black
-//        self.navigationItem.rightBarButtonItem = search_button
         
         imageView = UIImageView(image: UIImage(named: "search"))
         guard let navigationBar = self.navigationController?.navigationBar else { return }
