@@ -66,6 +66,7 @@ class MainVC:UIViewController,UICollectionViewDelegate,UICollectionViewDataSourc
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.tabBarController?.navigationItem.title = "Discover"
+        showImage(true)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -161,7 +162,7 @@ class MainVC:UIViewController,UICollectionViewDelegate,UICollectionViewDataSourc
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.view.backgroundColor = .clear
         
-        imageView = UIImageView(image: UIImage(named: "search"))
+        imageView = UIImageView(image: UIImage(named: "magnifying-glass (1)"))
         guard let navigationBar = self.navigationController?.navigationBar else { return }
         navigationBar.addSubview(imageView)
         imageView.layer.cornerRadius = Const.ImageSizeForLargeState / 3
@@ -224,7 +225,7 @@ public struct Const {
     /// Margin from bottom anchor of NavBar to bottom anchor of Image for Small NavBar state
     static let ImageBottomMarginForSmallState: CGFloat = 6
     /// Image height/width for Small NavBar state
-    static let ImageSizeForSmallState: CGFloat = 32
+    static let ImageSizeForSmallState: CGFloat = 24
     /// Height of NavBar for Small state. Usually it's just 44
     static let NavBarHeightSmallState: CGFloat = 44
     /// Height of NavBar for Large state. Usually it's just 96.5 but if you have a custom font for the title, please make sure to edit this value since it changes the height for Large state of NavBar

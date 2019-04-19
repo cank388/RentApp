@@ -20,7 +20,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Mpz-nn-OO8"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="location" id="xhl-18-FVo"/>
+                    <tabBarItem key="tabBarItem" title="" image="placeholder-filled-point (1)" id="xhl-18-FVo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jcM-k5-EXn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -36,7 +36,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1Js-u0-VGQ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="heart" id="U0S-U7-pqk"/>
+                    <tabBarItem key="tabBarItem" title="" image="heart (3)" id="U0S-U7-pqk"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BIL-N7-g6J" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -201,16 +201,25 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="128" height="138"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZpD-DM-Zhc">
-                                                                            <rect key="frame" x="12" y="120" width="102" height="18"/>
-                                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZpD-DM-Zhc">
+                                                                            <rect key="frame" x="12" y="120.66666666666667" width="100" height="14.333333333333329"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="14.33" id="ntO-Hp-JY4"/>
+                                                                                <constraint firstAttribute="width" constant="100" id="oE6-kw-qA7"/>
+                                                                            </constraints>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
+                                                                            <variation key="heightClass=regular-widthClass=compact">
+                                                                                <color key="textColor" red="0.40392156862745099" green="0.40784313725490196" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </variation>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zh0-hC-FWG">
-                                                                            <rect key="frame" x="12" y="93" width="102" height="25"/>
-                                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zh0-hC-FWG">
+                                                                            <rect key="frame" x="12" y="93" width="100" height="25"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="100" id="0Pw-zP-EB5"/>
+                                                                                <constraint firstAttribute="height" constant="25" id="9ql-Ye-81p"/>
+                                                                            </constraints>
                                                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
@@ -222,8 +231,8 @@
                                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="22C-k2-rNQ">
-                                                                            <rect key="frame" x="12" y="11" width="48" height="48"/>
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="22C-k2-rNQ">
+                                                                            <rect key="frame" x="12" y="9" width="48" height="48"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="48" id="4DK-tl-TfM"/>
                                                                                 <constraint firstAttribute="width" constant="48" id="nHy-WN-eBF"/>
@@ -232,7 +241,12 @@
                                                                     </subviews>
                                                                 </view>
                                                                 <constraints>
+                                                                    <constraint firstItem="22C-k2-rNQ" firstAttribute="top" secondItem="oUx-ER-fQW" secondAttribute="topMargin" constant="1" id="EaH-qA-Gph"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="ZpD-DM-Zhc" secondAttribute="bottom" constant="3" id="FUd-cJ-gWC"/>
                                                                     <constraint firstItem="22C-k2-rNQ" firstAttribute="leading" secondItem="oUx-ER-fQW" secondAttribute="leadingMargin" constant="4" id="NEM-Is-snB"/>
+                                                                    <constraint firstItem="ZpD-DM-Zhc" firstAttribute="top" secondItem="Zh0-hC-FWG" secondAttribute="bottom" constant="2.6666666666666714" id="NeP-eO-Ppe"/>
+                                                                    <constraint firstItem="ZpD-DM-Zhc" firstAttribute="leading" secondItem="oUx-ER-fQW" secondAttribute="leading" constant="12" id="V5j-pc-42G"/>
+                                                                    <constraint firstItem="Zh0-hC-FWG" firstAttribute="leading" secondItem="oUx-ER-fQW" secondAttribute="leadingMargin" constant="4" id="Xyd-cB-tIy"/>
                                                                 </constraints>
                                                                 <size key="customSize" width="128" height="138"/>
                                                                 <variation key="heightClass=regular-widthClass=compact">
@@ -292,7 +306,7 @@
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mui-g0-kCy">
                                                                             <rect key="frame" x="156" y="90" width="67" height="21"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                            <nil key="textColor"/>
+                                                                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
@@ -338,7 +352,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wli-Xf-uNy"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="ico home" id="fMN-y3-rsl"/>
+                    <tabBarItem key="tabBarItem" title="" image="home-icon-silhouette" id="fMN-y3-rsl"/>
                     <connections>
                         <outlet property="bottomCollectionView" destination="jw3-wV-zXN" id="AON-Q0-5wH"/>
                         <outlet property="middleCollectionView" destination="mZ8-B6-vgb" id="DT9-j0-f5W"/>
@@ -359,7 +373,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="mau-Un-2VU"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="ico home" id="5LR-1f-R24"/>
+                    <tabBarItem key="tabBarItem" title="" image="user (3)" id="5LR-1f-R24"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gF8-64-iZS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -408,9 +422,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="heart" width="19" height="16"/>
-        <image name="ico home" width="16" height="18"/>
-        <image name="location" width="25" height="25"/>
+        <image name="heart (3)" width="12.800000190734863" height="12.800000190734863"/>
+        <image name="home-icon-silhouette" width="12" height="12"/>
         <image name="photo" width="47" height="47"/>
+        <image name="placeholder-filled-point (1)" width="12" height="12"/>
+        <image name="user (3)" width="12" height="12"/>
     </resources>
 </document>

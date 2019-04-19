@@ -16,6 +16,7 @@ class TopCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var starLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var stayedPeopleLabel: UILabel!
+    @IBOutlet weak var noticeView: UIView!
     
     
     
