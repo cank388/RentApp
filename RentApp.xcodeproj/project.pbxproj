@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B361E2C2269F1DE00D3C182 /* Rent App.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B361E2B2269F1DE00D3C182 /* Rent App.png */; };
 		8B84CFCB2260BB6F00189E82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B84CFCA2260BB6F00189E82 /* AppDelegate.swift */; };
 		8B84CFCD2260BB6F00189E82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B84CFCC2260BB6F00189E82 /* ViewController.swift */; };
 		8B84CFD02260BB6F00189E82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B84CFCE2260BB6F00189E82 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B361E2B2269F1DE00D3C182 /* Rent App.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rent App.png"; sourceTree = "<group>"; };
 		8B84CFC72260BB6F00189E82 /* RentApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RentApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B84CFCA2260BB6F00189E82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B84CFCC2260BB6F00189E82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		8B361E2A2269F1BA00D3C182 /* App Images */ = {
+			isa = PBXGroup;
+			children = (
+				8B361E2B2269F1DE00D3C182 /* Rent App.png */,
+			);
+			path = "App Images";
+			sourceTree = "<group>";
+		};
 		8B84CFBE2260BB6F00189E82 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +94,7 @@
 		8B84CFC92260BB6F00189E82 /* RentApp */ = {
 			isa = PBXGroup;
 			children = (
+				8B361E2A2269F1BA00D3C182 /* App Images */,
 				8B361E292269BE0900D3C182 /* Cells */,
 				8B84CFE02260BD4100189E82 /* Controller */,
 				8B84CFDC2260BBF300189E82 /* Modal */,
@@ -177,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B84CFD52260BB7200189E82 /* LaunchScreen.storyboard in Resources */,
+				8B361E2C2269F1DE00D3C182 /* Rent App.png in Resources */,
 				8B84CFD22260BB7200189E82 /* Assets.xcassets in Resources */,
 				8B84CFD02260BB6F00189E82 /* Main.storyboard in Resources */,
 			);
